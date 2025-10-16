@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .card {
+        height: 200px;
+        width: 350px;
+        background-color: red;
+        color: gray;
+        padding: 2em;
+        margin: 2em;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        text-transform: uppercase;
+        transition: transform 1s linear;
+    }
+    .card:hover {
+        transform: rotateX(180deg);
+    }
+    .card-back {
+        display: none;
+    }
+    .card:hover .card-front {
+        display: none;
+    }
+    .card:hover .card-back {
+        display: block;
+        transform: rotateX(180deg);
+    }
+</style>
+<body>
+    <div class="card">
+        <div class="card-front">
+            <h1>Front Side</h1>
+            <p>This is the front side of the card.</p>
+        </div>
+        <div class="card-back">
+            <h1>Back Side</h1>
+            <p>This is the back side of the card.</p>
+        </div>
+    </div>
+</body>
+</html>

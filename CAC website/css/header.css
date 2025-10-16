@@ -1,0 +1,294 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+.home-content {
+    height: 725px;
+}
+
+.home-top-header {
+    background-color: #29292a;
+    height: 7%;
+    display: flex;
+    justify-content: center;
+    border-top: 4px solid #a0ce4e;
+}
+
+.home-top-header-content {
+    width: 78%;
+    height: 99%;
+    display: flex;
+    color: white;
+    align-items: center;
+    font-size: 11px;
+}
+
+.home-top-contact-details {
+    display: flex;
+    width: 30%;
+    gap: 10px;
+}
+
+.home-top-social-icons {
+    width: 70%;
+    height: 99%;
+    color: white;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.home-top-social-icons>.icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.home-top-social-icons>.icons>i {
+    font-size: 30px;
+}
+
+.home-footer-header {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid grey;
+    z-index: 10;
+}
+
+.nav-bar {
+    width: 78%;
+    display: flex;
+    align-items: center;
+    
+}
+
+.logo {
+    width: 13%;
+}
+
+.logo>img {
+    width: 100%;
+    height: 100%;
+}
+
+nav {
+    display: flex;
+    width: 87%;
+}
+
+ul {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 35px;
+    height: 90px;
+    width: 100%;
+}
+
+ul>li {
+    list-style: none;
+    height: 100%;
+    border: 1px solid r;
+}
+
+ul>li>a {
+    font-size: 12px;
+    text-decoration: none;
+    color: black;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#bd-bot-nav:hover {
+    border-top: 3px solid #a0ce4e;
+    color: #a0ce4e;
+    display: flex;
+    justify-content: center;
+}
+
+.left-nav-bars {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-harm {
+    display: none;
+}
+
+#bd-top-nav {
+    border-top: 3px solid #a0ce4e;
+    color: #a0ce4e;
+    display: flex;
+    justify-content: center;
+}
+
+ul>.bd-top-nav-b>li {
+    display: flex;
+    position: relative;
+}
+
+.bd-top-nav-b>ul>li {
+    height: 100%;
+}
+
+.bd-top-nav-b>ul>li>a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+}
+
+.second {
+    font-size: 12px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    height: 100%;
+    justify-self: center;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    top: 60px;
+    border-top: 3px solid #3e8e41;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown>li {
+    list-style-type: none;
+     height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown>li>a {
+    text-decoration: none;
+     height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+@media screen and (max-width: 1255px) {
+    .nav-bar {
+        width: 88%;
+        display: flex;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+    .nav-bar {
+        display: block;
+    }
+
+    nav {
+        width: 92%;
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .home-top-header-content {
+        display: block;
+        height: 90px;
+    }
+
+    .home-top-contact-details {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        width: 100%;
+        height: 55%;
+    }
+
+    .home-top-social-icons {
+        height: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .home-top-contact-details>p {
+        text-align: center;
+    }
+
+    .nav-bar {
+        height: 100px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+
+    ul,
+    .left-nav-bars {
+        display: none;
+    }
+
+    .logo {
+        width: 20%;
+        min-width: 150px;
+
+    }
+
+    .menu-harm {
+        display: flex;
+        justify-content: end;
+        width: 100%;
+        font-size: 24px;
+        color: grey;
+    }
+    .menu-harm:hover .dropdown-content {
+        display: block;
+        position: relative;
+        top: 50%;
+        right: 100px;
+        font-size: 12px;
+    }
+}

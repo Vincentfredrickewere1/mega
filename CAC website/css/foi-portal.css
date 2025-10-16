@@ -1,0 +1,277 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    height: 170vh;
+    border: 1px solid green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.foi {
+    height: 90%;
+    width: 78%;
+}
+
+.header-foi {
+    height: 15%;
+    display: flex;
+}
+
+.left-header-foi {
+    width: 50%;
+    height: 20%;
+}
+
+.left-header-foi>span {
+    font-size: 20px;
+}
+
+.right-header-foi {
+    width: 50%;
+    height: 20%;
+    display: flex;
+    justify-content: end;
+    align-items: flex-start;
+}
+
+.right-header-foi>span {
+    font-size: 11px;
+    font-family: sans-serif;
+}
+
+.home-hover:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.header-foi-icon {
+    height: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 11;
+}
+
+.header-foi-icon>.icon-foi {
+    height: 40%;
+}
+
+.header-foi-icon>.icon-foi>i {
+    color: green;
+    font-size: 39px;
+}
+
+.header-foi-icon>.text-foi-icon {
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-foi>span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foi-articles {
+    height: 10%;
+}
+
+.foi-articles>span {
+    font-size: 55px;
+    float: left;
+}
+
+.foi-articles1 {
+    height: 64%;
+}
+
+.text-1-foi {
+    height: 50%;
+}
+
+.text-text1 {
+    font-family: sans-serif;
+    color: grey;
+    height: 35%;
+}
+
+.text-text1>span {
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.letter {
+    height: 65%;
+    color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 40px;
+    font-size: 15px;
+}
+
+.btm-foi-content {
+    height: 50%;
+    justify-items: center;
+}
+
+.btm-content1 {
+    background-color: #fcf8e3;
+    border: 2px solid #e8d46f;
+    height: 25%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btm-content1>span>i {
+    color: #d9b917;
+}
+
+.btm-content2 {
+    border: 2px solid #e8d46f;
+    background-color: #fcf8e3;
+    height: 55%;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.btm-content2>.icon-btm2 {
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: #d9b917;
+}
+
+.btm-text2 {
+    height: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btm-text2>span {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 13px;
+    color: #333333;
+}
+
+@media screen and (max-width: 1109px) {
+    .header-foi {
+        height: 10%;
+    }
+
+    .header-foi-icon {
+        height: 10%;
+    }
+
+    .foi-articles>span {
+        font-size: 45px;
+    }
+
+    .text-text1 {
+        height: 45%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .header-foi {
+        display: block;
+    }
+
+    .left-header-foi {
+        width: 100%;
+        height: 40%;
+    }
+
+    .right-header-foi {
+        width: 100%;
+        height: 20%;
+        display: flex;
+        justify-content: start;
+        align-items: flex-start;
+    }
+
+    .foi-articles>span {
+        font-size: 35px;
+    }
+
+    .text-text1 {
+        height: 55%;
+    }
+
+    .text-1-foi {
+        height: 50%;
+        border: 1px solid red;
+    }
+
+    .text-text1>span {
+        font-size: 25px;
+        line-height: 23px;
+    }
+
+    .letter {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .header-foi {
+        height: 5%;
+    }
+
+    .header-foi-icon {
+        height: 5%;
+    }
+
+    .foi-articles1 {
+        height: 80%;
+    }
+
+    .text-text1>span {
+        font-size: 13px;
+    }
+
+    .letter {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 428px) {
+    main {
+        height: 250vh;
+    }
+
+    .foi-articles {
+        height: 7%;
+    }
+
+    .foi-articles>span {
+        font-size: 25px;
+    }
+
+    .foi-articles1 {
+        height: 100%;
+    }
+
+    .btm-foi-content {
+        height: 30%;
+    }
+}
+
+@media screen and (max-width: 257px) {
+    .foi-articles>span {
+        font-size: 20px;
+    }
+}

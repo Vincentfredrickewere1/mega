@@ -1,0 +1,388 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    height: 1500px;
+}
+
+.home-header {
+    height: 400px;
+}
+
+.home-bg-img {
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/cac-office-hq.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-bg-text>span {
+    font-family: serif;
+    font-size: 66px;
+    text-wrap: wrap;
+}
+
+.home-flip-service {
+    height: 430px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-flip-details {
+    height: 80%;
+    width: 80%;
+}
+
+.header-home-flip {
+    height: 13%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-home-flip-content {
+    background-color: rgba(107, 139, 52, 0.988);
+    width: 47%;
+    height: 99%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-home-flip-content>span {
+    color: rgb(5, 65, 5);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.header-home-flip-content>span>i {
+    color: white;
+    font-weight: bold;
+}
+.bottom-home-flip {
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.flips-home-boxs {
+    position: relative;
+    width: 31%;
+    height: 70%;
+    perspective: 1000px;
+    border-radius: 9px;
+    cursor: pointer;
+    /* z-index: -1; */
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    border-radius: 9px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.flips-home-boxs:hover .flip-card-inner {
+    transform: rotateX(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.flip-card-front {
+    background-color: #f6f6f6;
+    color: #333;
+}
+
+.flip-card-back {
+    background-color: #a0ce4e;
+    color: white;
+    transform: rotateX(180deg);
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.flips-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+}
+
+.flips-icon>i {
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 450px;
+}
+
+.flip-heading-txt {
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+}
+
+.flip-heading-txt>span {
+    font-size: 36px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.flip-btm-txt {
+    height: 19%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flip-btm-txt>span {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.back-content {
+    text-align: center;
+}
+
+.back-content h3 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.back-content p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.back-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #a0ce4e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.back-button:hover {
+    background-color: #04240399;
+    transform: scale(1.05);
+}
+
+.sbs-register-section {
+    height: 730px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sbs-content {
+    height: 80%;
+    width: 80%;
+}
+
+fieldset {
+    height: 15%;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+legend {
+    color: #339966;
+    font-size: 40px;
+    text-align: center;
+}
+
+.sbs-inner-content {
+    height: 35%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sbs-inner-contents-box {
+    width: 31%;
+    height: 100%;
+}
+
+.sbs-box-icon {
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sbs-box-icon>i {
+    font-size: 55px;
+    background-color: #a0ce4e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    color: white;
+}
+
+.sbs-btm-content {
+    height: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sbs-box-head {
+    color: #5a667c;
+    height: 13%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sbs-box-head>span {
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.sbs-box-head>span:hover {
+    color: #a0ce4e;
+}
+
+.sbs-box-txt {
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    color: #5a667c;
+}
+
+.sbs-box-txt>span {
+    text-align: center;
+}
+
+.sbs-btn-inner {
+    border: 2px solid #dbbc22;
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fcf8e3;
+}
+
+.sbs-contents>i {
+    color: #d9b917;
+}
+
+.sbs-content>span {
+    background-color: #fcf8e3;
+}
+
+@media screen and (max-width: 800px) {
+    main {
+        height: 2200px;
+    }
+
+    .home-flip-details {
+        width: 95%;
+        height: 100%;
+    }
+
+    .header-home-flip {
+        display: block;
+    }
+
+    .header-home-flip-content {
+        width: 100%;
+        border: 1px solid;
+        box-shadow: 0px 0px 15px black;
+    }
+
+    .bottom-home-flip {
+        display: block;
+        margin-top: 50px;
+    }
+
+    .bottom-home-flip>.flips-home-boxs {
+        width: 100%;
+        height: 50%;
+        margin-top: 10px;
+    }
+
+    .flip-heading-txt {
+        display: flex;
+
+    }
+
+    .sbs-register-section {
+        margin-top: 220px;
+    }
+
+    .sbs-inner-content {
+        width: 98%;
+        display: block;
+        justify-items: center;
+    }
+
+    .sbs-inner-contents-box {
+        width: 100%;
+    }
+
+    .sbs-btn-inner {
+        margin-top: 800px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    main {
+        height: 1500px;
+    }
+
+    .bottom-home-flip {
+        display: none;
+    }
+
+    .home-flip-service {
+        height: 100px;
+    }
+
+    .header-home-flip {
+        height: 40%;
+    }
+
+    .sbs-register-section {
+        margin-top: -70px;
+    }
+}

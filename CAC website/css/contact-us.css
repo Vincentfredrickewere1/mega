@@ -1,0 +1,305 @@
+.contact-header {
+    height: 60vh;
+}
+
+.contact-header-img {
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/blog_news_title_bg.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.head-cont-img {
+    color: gray;
+    font-size: 50px;
+    text-align: center;
+}
+
+.btm-cont-img {
+    color: white;
+    text-align: center;
+}
+
+main {
+    height: 220vh;
+}
+
+.contact-form {
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    width: 78%;
+    height: 90%;
+}
+
+.header-form {
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.header-form>span {
+    font-size: 40px;
+}
+
+.form-box {
+    height: 90%;
+    display: flex;
+}
+
+.main-form-content {
+    width: 70%;
+    height: 99%;
+}
+
+form {
+    height: 99%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+form>div {
+    width: 90%;
+    justify-self: center;
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+label {
+    width: 100%;
+    height: 10%;
+    font-size: 15px;
+    color: gray;
+}
+
+input {
+    width: 100%;
+    height: 50%;
+    outline: none;
+}
+
+.textarea {
+    height: 35%;
+}
+
+textarea {
+    width: 100%;
+    height: 100%;
+    outline: none;
+}
+
+.button {
+    height: 50px;
+}
+
+button {
+    background-color: #a0ce4e;
+    color: white;
+    width: 90px;
+    height: 75%;
+    border: none;
+}
+
+.main-form-details {
+    height: 99%;
+    width: 30%;
+}
+
+.main-form-details-contents {
+    height: 85%;
+    justify-items: center;
+}
+
+.details-header {
+    width: 90%;
+    height: 25%;
+}
+
+.contact-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40%;
+}
+
+.contact-heading>span {
+    font-size: 27px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.contact-heading2 {
+    display: flex;
+    height: 60%;
+}
+
+.contact-heading2>span {
+    font-size: 14px;
+    text-align: center;
+    color: gray;
+}
+
+.contact-info {
+    width: 90%;
+    height: 35%;
+}
+
+.contact-info-details {
+    height: 31%;
+}
+
+.contact-info-details>span {
+    font-size: 17px;
+    color: gray;
+}
+
+.contact-info-details>span>i {
+    color: #a0ce4e;
+}
+
+.btm-contact-box {
+    height: 30%;
+    width: 90%;
+    background-color: #fcf8e3;
+    border: 2px solid #f5edc3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btm-contact-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btm-contact-img>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-offices {
+    height: 25%;
+    display: flex;
+}
+
+.head-img-contact {
+    width: 50%;
+    height: 100%;
+    background-image: url(../images/ny_office_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: transform 0.5s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#zoomout-1:hover {
+    background-image: url(../images/ny_office_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.head-inner-content {
+    height: 80%;
+    width: 80%;
+}
+
+.inner-head-contact {
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-head-contact>span {
+    font-size: 26px;
+    color: #a0ce4e;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.btm-inner-contact {
+    height: 69%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.state-img-contact {
+    width: 50%;
+    height: 100%;
+    background-image: url(../images/londong_office_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: transform 0.5s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#zoomout-2:hover {
+    background-image: url(../images/londong_office_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.contact-map {
+    height: 25%;
+}
+footer {
+    margin-top: 90px;
+}
+@media screen and (max-width: 800px) {
+    .form-box {
+        display: block;
+    }
+
+    .main-form-content {
+        width: 100%;
+        height: 99%;
+    }
+
+    .main-form-details {
+        height: 99%;
+        width: 100%;
+    }
+
+    .contact-offices {
+        margin-top: 800px;
+    }
+    .contact-offices {
+        display: block;
+    }
+    .head-img-contact {
+        width: 100%;
+    }
+    .state-img-contact {
+        width: 100%;
+    }
+    .contact-map {
+        margin-top: 400px;
+    }
+    footer {
+        margin-top: 1000px;
+    }
+}
